@@ -51,13 +51,13 @@
     <loc>https://sasvel.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="bg"
-                href="https://sasvel.github.io/bg/categories/"
+                hreflang="en"
+                href="https://sasvel.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://sasvel.github.io/categories/"
+                hreflang="bg"
+                href="https://sasvel.github.io/bg/categories/"
                 />
   </url>
 </urlset>
