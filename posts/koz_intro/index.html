@@ -24,6 +24,9 @@
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/fonts.min.26a9a7dbdebaf121b4e301180822e08f298808aa8d493430a3d1da4a2fd46a15.css">
 
   
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/menu.min.c24993bf7d3a1adb662d8b9f6b7b9a30f68e1943e27a17e299bf86a983c484cf.css">
+
+  
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
 
   
@@ -40,9 +43,6 @@
 
   
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/main.min.5578d4423a570142552dfff5c95f864b96391ad4c14740c07228bba517a4d554.css">
-
-  
-  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
 
   
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
@@ -103,7 +103,9 @@
 
 
 
-<script defer src="https://analytics.open-domains.com/script.js" data-website-id="83e8353c-eabb-4546-9a5a-f093fe46bac1"></script>
+
+
+    <script defer src="https://analytics.open-domains.com/script.js" data-website-id="83e8353c-eabb-4546-9a5a-f093fe46bac1"></script>
 
 
 </head>
@@ -170,24 +172,73 @@
           <li><a href="/tags/tech" >Tech</a></li>
         
       
+        
+          <li><a href="/about" >About</a></li>
+        
       
-        <li>
-          <ul class="menu">
-            <li class="menu__trigger">Show more&nbsp;▾</li>
-            <li>
-              <ul class="menu__dropdown">
-                
-                  
-                    <li><a href="/about" >About</a></li>
-                  
-                
-              </ul>
-            </li>
-          </ul>
-        </li>
       
     
   </ul>
+  
+<a class="share-link share-bluesky"
+  onclick="openLink('https:\/\/bsky.app\/profile\/sasvel.itch.io')"
+  target="_blank"
+  rel="noopener"
+  aria-label="Profile on Bluesky">
+  <i class="fa-brands fa-bluesky fa-lg"></i>
+</a>
+
+
+<a class="share-link share-itch-io"
+	onclick="openLink('https:\/\/sasvel.itch.io\/')"
+   target="_blank"
+   rel="noopener"
+   aria-label="Profile on Itch.io">
+  <i class="fa-brands fa-itch-io fa-lg"></i>
+</a>
+
+
+<a class="share-link share-x-twitter"
+	onclick="openLink('https:\/\/x.com\/Kinematic_Des')"
+   target="_blank"
+   rel="noopener"
+   aria-label="Profile on X">
+  <i class="fa-brands fa-x-twitter fa-lg"></i>
+</a>
+
+
+<a class="share-link share-ko-fi"
+	onclick="openLink('https:\/\/ko-fi.com\/sasvel')"
+   target="_blank"
+   rel="noopener"
+   aria-label="Profile on Ko-Fi">
+  <i class="fa-brands fa-ko-fi fa-lg"></i>
+</a>
+
+
+
+<a class="share-link share-mastodon"
+   href="#"
+	onclick="openLink('https:\/\/mastodon.gamedev.place\/@SasVel')"
+   aria-label="Profile on Mastodon">
+  <i class="fa-brands fa-mastodon fa-lg"></i>
+</a>
+
+
+<a class="share-link share-github"
+	onclick="openLink('https:\/\/github.com\/SasVel')"
+   target="_blank"
+   rel="noopener"
+   aria-label="Profile on Github">
+  <i class="fa-brands fa-github fa-lg"></i>
+</a>
+
+<script>
+function openLink(url) {
+  window.open(url, '_blank');
+}
+</script>
+
 </nav>
 
   
@@ -208,7 +259,7 @@
   <h1 class="post-title">
     <a href="https://kin-design.is-cool.dev/posts/koz_intro/">This is Koz!</a>
   </h1>
-  <div class="post-meta"><time class="post-date">30-10-2026</time><span class="post-reading-time">3 min read (513 words)</span></div>
+  <div class="post-meta"><time class="post-date">30-10-2026</time><span class="post-reading-time">3 min read (524 words)</span></div>
 
   
     <span class="post-tags">
@@ -229,7 +280,49 @@
   
 
   <div class="post-content"><div>
-        <h1 id="the-weird-yet-charming-idea">The weird, yet charming idea.<a href="#the-weird-yet-charming-idea" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+        <div class="player">
+  <button id="playButton" type="button" onclick="showContent(this)">
+    Play Koz in the browser!
+  </button>
+  <button id="stopButton" type="button" style="visibility: hidden;" onclick="clearContent(this)">
+    Stop Koz.
+  </button>
+
+  
+  <button type="button" onclick="openLink(&#34;https://sasvel.itch.io/koz/rate&#34;)">Rate &amp; Review</button>
+  
+</div>
+
+<script>
+  function openLink(url) {
+    window.open(url, "_blank");
+  }
+
+  function showContent(button) {
+    const player = button.closest(".player");
+    const stopButton = document.getElementById("stopButton")
+    button.style.visibility = "hidden";
+    stopButton.style.visibility = "visible";
+
+    const iframe = document.createElement("iframe");
+    iframe.className = "embed-container";
+    iframe.src = "https://itch.io/embed-upload/18108046?color=9e2835";
+    iframe.frameBorder = "0";
+    iframe.allowFullscreen = true;
+    player.appendChild(iframe);
+  }
+
+  function clearContent(button) {
+    const player = button.closest(".player");
+    const playButton = document.getElementById("playButton")
+
+    player.querySelector(".embed-container")?.remove();
+    playButton.style.visibility = "visible";
+    button.style.visibility = "hidden";
+  }
+</script>
+
+<h1 id="the-weird-yet-charming-idea">The weird, yet charming idea.<a href="#the-weird-yet-charming-idea" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Koz started as an ambitious university project for a pygame course.
 It was my first experience building a game outside of an engine and it was a wild one.
 I wanted to make something like a visual representation of what is going on in my head when playing Scoundrel and go off from there.</p>
@@ -261,8 +354,8 @@ Ruining the whole point of having dependancies, all game objects reserve memory 
 But at least it worked, and that is a sacrifice I was willing to make. The game is small enough to not be a RAM hog, even with my shitty solution.</p>
 <p><em>Also finding PygameCE was a game changer, it has a ton of little improvements, as well as having slightly better documentation.</em></p>
 <p>It was a fun project that made me a better developer, no doubt about that. The ECS system from scratch made me sweat. Coding without an engine felt like making a whole new world out of nothing, it was incredibly freeing, yet very scary. You can&rsquo;t really blame anybody or any feature, when all features are made by you. <strong>All decisions fall on your shoulders alone.</strong></p>
-<p>The game worked at the end and I was a happy bugger. But I was not satisfied, I didn&rsquo;t manage to make shaders work, good particle effects would also take forever. So I made my first game rewrite - from Pygame to Godot!</p>
-<p>This is <a href="https://github.com/SasVel/Koz-Pygame.git">the original repo</a> for the project if you want to enjoy some badly written code.</p>
+<p>The game worked at the end and I was a happy bugger. But I was not yet satisfied, I didn&rsquo;t manage to make shaders work, good particle effects would also take forever. So I made my first game rewrite - from Pygame to Godot!</p>
+<p>This is <a href="https://github.com/SasVel/Koz-Pygame.git">the original repo</a> for the project if you want to enjoy some <em>badly written code</em>.</p>
 
       </div></div>
 
