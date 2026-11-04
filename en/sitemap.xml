@@ -3,61 +3,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sasvel.github.io/posts/newpost/</loc>
+    <loc>https://kin-design.is-cool.dev/tags/game-dev/</loc>
     <lastmod>2026-10-30T08:53:38+02:00</lastmod>
   </url><url>
-    <loc>https://sasvel.github.io/tags/post-tag/</loc>
+    <loc>https://kin-design.is-cool.dev/tags/koz/</loc>
     <lastmod>2026-10-30T08:53:38+02:00</lastmod>
   </url><url>
-    <loc>https://sasvel.github.io/tags/post-tagger/</loc>
+    <loc>https://kin-design.is-cool.dev/posts/</loc>
     <lastmod>2026-10-30T08:53:38+02:00</lastmod>
   </url><url>
-    <loc>https://sasvel.github.io/posts/</loc>
-    <lastmod>2026-10-30T08:53:38+02:00</lastmod>
-  </url><url>
-    <loc>https://sasvel.github.io/tags/</loc>
+    <loc>https://kin-design.is-cool.dev/tags/</loc>
     <lastmod>2026-10-30T08:53:38+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://sasvel.github.io/tags/"
+                href="https://kin-design.is-cool.dev/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="bg"
-                href="https://sasvel.github.io/bg/tags/"
+                href="https://kin-design.is-cool.dev/bg/tags/"
                 />
   </url><url>
-    <loc>https://sasvel.github.io/</loc>
+    <loc>https://kin-design.is-cool.dev/</loc>
     <lastmod>2026-10-30T08:53:38+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://sasvel.github.io/"
+                href="https://kin-design.is-cool.dev/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="bg"
-                href="https://sasvel.github.io/bg/"
+                href="https://kin-design.is-cool.dev/bg/"
                 />
   </url><url>
-    <loc>https://sasvel.github.io/homepage/</loc>
+    <loc>https://kin-design.is-cool.dev/posts/koz_intro/</loc>
+    <lastmod>2026-10-30T08:53:38+02:00</lastmod>
+  </url><url>
+    <loc>https://kin-design.is-cool.dev/homepage/</loc>
     <lastmod>2026-10-30T08:51:43+02:00</lastmod>
   </url><url>
-    <loc>https://sasvel.github.io/about/about/</loc>
+    <loc>https://kin-design.is-cool.dev/about/about/</loc>
   </url><url>
-    <loc>https://sasvel.github.io/about/</loc>
+    <loc>https://kin-design.is-cool.dev/about/</loc>
   </url><url>
-    <loc>https://sasvel.github.io/categories/</loc>
+    <loc>https://kin-design.is-cool.dev/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="bg"
-                href="https://sasvel.github.io/bg/categories/"
+                href="https://kin-design.is-cool.dev/bg/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://sasvel.github.io/categories/"
+                href="https://kin-design.is-cool.dev/categories/"
                 />
   </url>
 </urlset>

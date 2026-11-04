@@ -3,40 +3,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sasvel.github.io/bg/categories/</loc>
+    <loc>https://kin-design.is-cool.dev/bg/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="bg"
-                href="https://sasvel.github.io/bg/categories/"
+                href="https://kin-design.is-cool.dev/bg/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://sasvel.github.io/categories/"
+                href="https://kin-design.is-cool.dev/categories/"
                 />
   </url><url>
-    <loc>https://sasvel.github.io/bg/tags/</loc>
+    <loc>https://kin-design.is-cool.dev/bg/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://sasvel.github.io/tags/"
+                href="https://kin-design.is-cool.dev/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="bg"
-                href="https://sasvel.github.io/bg/tags/"
+                href="https://kin-design.is-cool.dev/bg/tags/"
                 />
   </url><url>
-    <loc>https://sasvel.github.io/bg/</loc>
+    <loc>https://kin-design.is-cool.dev/bg/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://sasvel.github.io/"
+                href="https://kin-design.is-cool.dev/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="bg"
-                href="https://sasvel.github.io/bg/"
+                href="https://kin-design.is-cool.dev/bg/"
                 />
   </url>
 </urlset>

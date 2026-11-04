@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Koz on The Kinematic Blog</title>
+		<link>https://kin-design.is-cool.dev/tags/koz/</link>
+		<description>Recent content in Koz on The Kinematic Blog</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+			<copyright>Created by Sas</copyright>
+		
+		
+			<lastBuildDate>Fri, 30 Oct 2026 08:53:38 +0200</lastBuildDate>
+		
+			<atom:link href="https://kin-design.is-cool.dev/tags/koz/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>This is Koz!</title>
+				<link>https://kin-design.is-cool.dev/posts/koz_intro/</link>
+				<pubDate>Fri, 30 Oct 2026 08:53:38 +0200</pubDate>
+				<guid>https://kin-design.is-cool.dev/posts/koz_intro/</guid>
+				<description>&lt;h1 id=&#34;the-weird-yet-charming-idea&#34;&gt;The weird, yet charming idea.&lt;/h1&gt;&#xA;&lt;p&gt;Koz started as an ambitious university project for a pygame course.&#xA;It was my first experience building a game outside of an engine and it was a wild one.&#xA;I wanted to make something like a visual representation of what is going on in my head when playing Scoundrel and go off from there.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-scoundrel&#34;&gt;What is &lt;a href=&#34;http://www.stfj.net/art/2011/Scoundrel.pdf&#34;&gt;Scoundrel&lt;/a&gt;?&lt;/h2&gt;&#xA;&lt;p&gt;Scoundrel is a &lt;em&gt;single player roguelike card game&lt;/em&gt; by Zach Gage and Kurt Bieg.&#xA;You can have an awesome roguelike experience by yourself with a deck of cards and a counter.&#xA;&lt;img src=&#34;https://kin-design.is-cool.dev/img/koz/rs_scoundrel_cover.jpg&#34; alt=&#34;Ripple Shuffle &amp;amp; Roll’s cover for his tutorial on Scoundrel&#34;&gt;&#xA;&lt;em&gt;&lt;a href=&#34;https://youtu.be/7fP-QLtWQZs?si=6TzTVj6jkvMDWEln&#34;&gt;Ripple Shuffle &amp;amp; Roll&amp;rsquo;s tutorial&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
