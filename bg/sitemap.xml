@@ -6,13 +6,13 @@
     <loc>https://kin-design.is-cool.dev/bg/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://kin-design.is-cool.dev/categories/"
+                hreflang="bg"
+                href="https://kin-design.is-cool.dev/bg/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="bg"
-                href="https://kin-design.is-cool.dev/bg/categories/"
+                hreflang="en"
+                href="https://kin-design.is-cool.dev/categories/"
                 />
   </url><url>
     <loc>https://kin-design.is-cool.dev/bg/tags/</loc>
