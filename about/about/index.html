@@ -25,7 +25,22 @@
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/fonts.min.26a9a7dbdebaf121b4e301180822e08f298808aa8d493430a3d1da4a2fd46a15.css">
 
   
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/game_embed.min.86a9b37afe680fb270b954b0848d6d422affa9e13dd7ff458f65e24d9164a4f6.css">
+
+  
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/menu.min.c722f9ac5d41a9d39c4d61b2c922d67bb97eac5bc47e4c3cf78e464341e6f1df.css">
+
+  
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/pagination.min.6fa4b51cdad2f584e235fe1a8e3dbe1802d5caf4b0e8ae02c4d70e801a61615f.css">
+
+  
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/post.min.4bb5b1f35c2157f88e08350f65fbf1144859890d955793b42a8b26e1039b15d0.css">
+
+  
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/share-buttons.min.67fbdf62f2bf26ff595bb2de74dea0e9fa479187033ab4d766c9f8e7c0d95d90.css">
+
+  
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/shared.min.eb277cbe66ceb7ca6c9ae99d39ed1ea29fc0f3f3c1c5dd11e1134201e2e6e4a0.css">
 
   
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
@@ -44,12 +59,6 @@
 
   
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/main.min.5578d4423a570142552dfff5c95f864b96391ad4c14740c07228bba517a4d554.css">
-
-  
-  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
-
-  
-  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
 
   
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/syntax.min.a2cc694a9b481f15d41722bffc2cc54eea4c4f74fd9072b0b33253604c22606e.css">
@@ -258,12 +267,74 @@ function openLink(url) {
   <h1 class="post-title">
     <a href="https://kin-design.is-cool.dev/about/about/">About</a>
   </h1>
-  <div class="post-meta"><span class="post-reading-time">1 min read (10 words)</span></div>
+  <div class="post-meta"><span class="post-reading-time">1 min read (10 words)</span><div class="share-buttons">
+  <a class="big-text">Share: </a>
+  
+  <a class="share-link share-copy"
+    onclick="copyLink('https:\/\/kin-design.is-cool.dev\/about\/about\/')"
+    target="_blank"
+    rel="noopener"
+    aria-label="Share on Bluesky">
+    <i class="fa-solid fa-share-nodes"></i>
+  </a>
+  
+  <a class="share-link share-bluesky"
+    href="https://bsky.app/intent/compose?text=About  Read More! %20https%3A%2F%2Fkin-design.is-cool.dev%2Fabout%2Fabout%2F"
+    target="_blank"
+    rel="noopener"
+    aria-label="Share on Bluesky">
+    <i class="fa-brands fa-bluesky fa-lg"></i>
+  </a>
+  
+  <a class="share-link share-x-twitter"
+    href="https://x.com/intent/tweet?text=About  Read More! %20https%3A%2F%2Fkin-design.is-cool.dev%2Fabout%2Fabout%2F"
+    target="_blank"
+    rel="noopener"
+    aria-label="Share on X">
+    <i class="fa-brands fa-x-twitter fa-lg"></i>
+  </a>
+  
+  <a class="share-link share-mastodon"
+    href="#"
+    onclick="shareToMastodon('About', 'https:\/\/kin-design.is-cool.dev\/about\/about\/'); return false;"
+    aria-label="Share on Mastodon">
+    <i class="fa-brands fa-mastodon fa-lg"></i>
+  </a>
+  <script>
+  function copyLink(url) {
+    console.log(url)
+    
+    navigator.clipboard.writeText(url);
+
+    
+    alert("Link copied: " + url);
+  }
+
+
+  function shareToMastodon(title, url) {
+    var instance = prompt("Enter your Mastodon server (e.g., mastodon.social):", "mastodon.social");
+    if (!instance) return false;
+    var shareUrl = "https://" + instance + "/share?text=" + encodeURIComponent(title + " " + url);
+    window.open(shareUrl, '_blank');
+  }
+  </script>
+</div>
+
+  </div>
 
   
   
 
 
+  
+  <blockquote>
+    <div class="table-of-contents">
+      <h2>
+        Table of Contents
+      </h2>
+      <nav id="TableOfContents"></nav>
+    </div>
+  </blockquote>
   
 
   <div class="post-content"><div>

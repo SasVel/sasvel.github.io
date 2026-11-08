@@ -24,7 +24,22 @@
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/fonts.min.26a9a7dbdebaf121b4e301180822e08f298808aa8d493430a3d1da4a2fd46a15.css">
 
   
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/game_embed.min.86a9b37afe680fb270b954b0848d6d422affa9e13dd7ff458f65e24d9164a4f6.css">
+
+  
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/menu.min.c722f9ac5d41a9d39c4d61b2c922d67bb97eac5bc47e4c3cf78e464341e6f1df.css">
+
+  
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/pagination.min.6fa4b51cdad2f584e235fe1a8e3dbe1802d5caf4b0e8ae02c4d70e801a61615f.css">
+
+  
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/post.min.4bb5b1f35c2157f88e08350f65fbf1144859890d955793b42a8b26e1039b15d0.css">
+
+  
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/share-buttons.min.67fbdf62f2bf26ff595bb2de74dea0e9fa479187033ab4d766c9f8e7c0d95d90.css">
+
+  
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/shared.min.eb277cbe66ceb7ca6c9ae99d39ed1ea29fc0f3f3c1c5dd11e1134201e2e6e4a0.css">
 
   
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
@@ -43,12 +58,6 @@
 
   
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/main.min.5578d4423a570142552dfff5c95f864b96391ad4c14740c07228bba517a4d554.css">
-
-  
-  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
-
-  
-  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
 
   
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/syntax.min.a2cc694a9b481f15d41722bffc2cc54eea4c4f74fd9072b0b33253604c22606e.css">
@@ -259,7 +268,60 @@ function openLink(url) {
   <h1 class="post-title">
     <a href="https://kin-design.is-cool.dev/posts/the-value-of-rnd-article/">The True Value of R&amp;D</a>
   </h1>
-  <div class="post-meta"><time class="post-date">03-07-2026</time></div>
+  <div class="post-meta"><time class="post-date">03-07-2026</time><div class="share-buttons">
+  <a class="big-text">Share: </a>
+  
+  <a class="share-link share-copy"
+    onclick="copyLink('https:\/\/kin-design.is-cool.dev\/posts\/the-value-of-rnd-article\/')"
+    target="_blank"
+    rel="noopener"
+    aria-label="Share on Bluesky">
+    <i class="fa-solid fa-share-nodes"></i>
+  </a>
+  
+  <a class="share-link share-bluesky"
+    href="https://bsky.app/intent/compose?text=The%20True%20Value%20of%20R%26D In%20your%20own%20development. Read More! %20https%3A%2F%2Fkin-design.is-cool.dev%2Fposts%2Fthe-value-of-rnd-article%2F"
+    target="_blank"
+    rel="noopener"
+    aria-label="Share on Bluesky">
+    <i class="fa-brands fa-bluesky fa-lg"></i>
+  </a>
+  
+  <a class="share-link share-x-twitter"
+    href="https://x.com/intent/tweet?text=The%20True%20Value%20of%20R%26D In%20your%20own%20development. Read More! %20https%3A%2F%2Fkin-design.is-cool.dev%2Fposts%2Fthe-value-of-rnd-article%2F"
+    target="_blank"
+    rel="noopener"
+    aria-label="Share on X">
+    <i class="fa-brands fa-x-twitter fa-lg"></i>
+  </a>
+  
+  <a class="share-link share-mastodon"
+    href="#"
+    onclick="shareToMastodon('The True Value of R\u0026D', 'https:\/\/kin-design.is-cool.dev\/posts\/the-value-of-rnd-article\/'); return false;"
+    aria-label="Share on Mastodon">
+    <i class="fa-brands fa-mastodon fa-lg"></i>
+  </a>
+  <script>
+  function copyLink(url) {
+    console.log(url)
+    
+    navigator.clipboard.writeText(url);
+
+    
+    alert("Link copied: " + url);
+  }
+
+
+  function shareToMastodon(title, url) {
+    var instance = prompt("Enter your Mastodon server (e.g., mastodon.social):", "mastodon.social");
+    if (!instance) return false;
+    var shareUrl = "https://" + instance + "/share?text=" + encodeURIComponent(title + " " + url);
+    window.open(shareUrl, '_blank');
+  }
+  </script>
+</div>
+
+  </div>
 
   
     <span class="post-tags">
@@ -270,18 +332,59 @@ function openLink(url) {
       
     </span>
   
+  <a href="https://kin-design.is-cool.dev/posts/the-value-of-rnd-article/">
   
   <img src="https://kin-design.is-cool.dev/img/covers/RnDCover.jpg"
     class="post-cover"
     alt="The True Value of R&D"
-    title="Cover Image" />
+    title="Image by Hermann Traub from Pixabay." />
+</a>
+  
+    <h5><i>Image by Hermann Traub from Pixabay.</i></h5>
+  
 
 
   
+  <blockquote>
+    <div class="table-of-contents">
+      <h2>
+        Table of Contents
+      </h2>
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#dry">DRY</a></li>
+        <li><a href="#grab-the-opportunity"><strong>Grab the opportunity</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#touch-typing">Touch typing</a></li>
+      </ul>
+    </li>
+    <li><a href="#linux">Linux</a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#linux-this-is-not-a-suggestion-do-it">LINUX. THIS IS NOT A SUGGESTION. DO IT.</a></li>
+        <li><a href="#the-vim-workflow">The Vim Workflow</a></li>
+        <li><a href="#hit-the-books-do-the-thing"><strong>Hit the books, do the thing</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </blockquote>
+  
 
   <div class="post-content"><div>
-        <p><strong>Image by <a href="https://pixabay.com/users/hermann-130146/?utm**source=link-attribution&amp;utm**medium=referral&amp;utm**campaign=image&amp;utm**content=462579">Hermann Traub</a> from <a href="https://pixabay.com//?utm**source=link-attribution&amp;utm**medium=referral&amp;utm**campaign=image&amp;utm**content=462579">Pixabay</a></strong></p>
-<p>Research and Development AKA R&amp;D is a common branch in many big companies dedicated to <strong>“playing around”</strong> with ideas until they strike something good.</p>
+        <p>Research and Development AKA R&amp;D is a common branch in many big companies dedicated to <strong>“playing around”</strong> with ideas until they strike something good.</p>
 <blockquote>
 <p><strong>Experimentation is not treated as an afterthought, but as a necessity for the survival of the company.</strong></p>
 </blockquote>
@@ -367,6 +470,59 @@ function openLink(url) {
   
     
 <div class="pagination">
+  <div class="centered"><div class="share-buttons">
+  <a class="big-text">Share: </a>
+  
+  <a class="share-link share-copy"
+    onclick="copyLink('https:\/\/kin-design.is-cool.dev\/posts\/the-value-of-rnd-article\/')"
+    target="_blank"
+    rel="noopener"
+    aria-label="Share on Bluesky">
+    <i class="fa-solid fa-share-nodes"></i>
+  </a>
+  
+  <a class="share-link share-bluesky"
+    href="https://bsky.app/intent/compose?text=The%20True%20Value%20of%20R%26D In%20your%20own%20development. Read More! %20https%3A%2F%2Fkin-design.is-cool.dev%2Fposts%2Fthe-value-of-rnd-article%2F"
+    target="_blank"
+    rel="noopener"
+    aria-label="Share on Bluesky">
+    <i class="fa-brands fa-bluesky fa-lg"></i>
+  </a>
+  
+  <a class="share-link share-x-twitter"
+    href="https://x.com/intent/tweet?text=The%20True%20Value%20of%20R%26D In%20your%20own%20development. Read More! %20https%3A%2F%2Fkin-design.is-cool.dev%2Fposts%2Fthe-value-of-rnd-article%2F"
+    target="_blank"
+    rel="noopener"
+    aria-label="Share on X">
+    <i class="fa-brands fa-x-twitter fa-lg"></i>
+  </a>
+  
+  <a class="share-link share-mastodon"
+    href="#"
+    onclick="shareToMastodon('The True Value of R\u0026D', 'https:\/\/kin-design.is-cool.dev\/posts\/the-value-of-rnd-article\/'); return false;"
+    aria-label="Share on Mastodon">
+    <i class="fa-brands fa-mastodon fa-lg"></i>
+  </a>
+  <script>
+  function copyLink(url) {
+    console.log(url)
+    
+    navigator.clipboard.writeText(url);
+
+    
+    alert("Link copied: " + url);
+  }
+
+
+  function shareToMastodon(title, url) {
+    var instance = prompt("Enter your Mastodon server (e.g., mastodon.social):", "mastodon.social");
+    if (!instance) return false;
+    var shareUrl = "https://" + instance + "/share?text=" + encodeURIComponent(title + " " + url);
+    window.open(shareUrl, '_blank');
+  }
+  </script>
+</div>
+</div>
   <div class="pagination__title">
     <span class="pagination__title-h">Read other posts</span>
     <hr />

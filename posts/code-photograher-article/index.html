@@ -24,7 +24,22 @@
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/fonts.min.26a9a7dbdebaf121b4e301180822e08f298808aa8d493430a3d1da4a2fd46a15.css">
 
   
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/game_embed.min.86a9b37afe680fb270b954b0848d6d422affa9e13dd7ff458f65e24d9164a4f6.css">
+
+  
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/menu.min.c722f9ac5d41a9d39c4d61b2c922d67bb97eac5bc47e4c3cf78e464341e6f1df.css">
+
+  
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/pagination.min.6fa4b51cdad2f584e235fe1a8e3dbe1802d5caf4b0e8ae02c4d70e801a61615f.css">
+
+  
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/post.min.4bb5b1f35c2157f88e08350f65fbf1144859890d955793b42a8b26e1039b15d0.css">
+
+  
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/share-buttons.min.67fbdf62f2bf26ff595bb2de74dea0e9fa479187033ab4d766c9f8e7c0d95d90.css">
+
+  
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/shared.min.eb277cbe66ceb7ca6c9ae99d39ed1ea29fc0f3f3c1c5dd11e1134201e2e6e4a0.css">
 
   
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
@@ -43,12 +58,6 @@
 
   
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/main.min.5578d4423a570142552dfff5c95f864b96391ad4c14740c07228bba517a4d554.css">
-
-  
-  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
-
-  
-  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
 
   
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/syntax.min.a2cc694a9b481f15d41722bffc2cc54eea4c4f74fd9072b0b33253604c22606e.css">
@@ -259,7 +268,60 @@ function openLink(url) {
   <h1 class="post-title">
     <a href="https://kin-design.is-cool.dev/posts/code-photograher-article/">Code Like a Photographer</a>
   </h1>
-  <div class="post-meta"><time class="post-date">27-06-2026</time><span class="post-reading-time">3 min read (594 words)</span></div>
+  <div class="post-meta"><time class="post-date">27-06-2026</time><span class="post-reading-time">3 min read (591 words)</span><div class="share-buttons">
+  <a class="big-text">Share: </a>
+  
+  <a class="share-link share-copy"
+    onclick="copyLink('https:\/\/kin-design.is-cool.dev\/posts\/code-photograher-article\/')"
+    target="_blank"
+    rel="noopener"
+    aria-label="Share on Bluesky">
+    <i class="fa-solid fa-share-nodes"></i>
+  </a>
+  
+  <a class="share-link share-bluesky"
+    href="https://bsky.app/intent/compose?text=Code%20Like%20a%20Photographer The%20value%20of%20a%20re-write. Read More! %20https%3A%2F%2Fkin-design.is-cool.dev%2Fposts%2Fcode-photograher-article%2F"
+    target="_blank"
+    rel="noopener"
+    aria-label="Share on Bluesky">
+    <i class="fa-brands fa-bluesky fa-lg"></i>
+  </a>
+  
+  <a class="share-link share-x-twitter"
+    href="https://x.com/intent/tweet?text=Code%20Like%20a%20Photographer The%20value%20of%20a%20re-write. Read More! %20https%3A%2F%2Fkin-design.is-cool.dev%2Fposts%2Fcode-photograher-article%2F"
+    target="_blank"
+    rel="noopener"
+    aria-label="Share on X">
+    <i class="fa-brands fa-x-twitter fa-lg"></i>
+  </a>
+  
+  <a class="share-link share-mastodon"
+    href="#"
+    onclick="shareToMastodon('Code Like a Photographer', 'https:\/\/kin-design.is-cool.dev\/posts\/code-photograher-article\/'); return false;"
+    aria-label="Share on Mastodon">
+    <i class="fa-brands fa-mastodon fa-lg"></i>
+  </a>
+  <script>
+  function copyLink(url) {
+    console.log(url)
+    
+    navigator.clipboard.writeText(url);
+
+    
+    alert("Link copied: " + url);
+  }
+
+
+  function shareToMastodon(title, url) {
+    var instance = prompt("Enter your Mastodon server (e.g., mastodon.social):", "mastodon.social");
+    if (!instance) return false;
+    var shareUrl = "https://" + instance + "/share?text=" + encodeURIComponent(title + " " + url);
+    window.open(shareUrl, '_blank');
+  }
+  </script>
+</div>
+
+  </div>
 
   
     <span class="post-tags">
@@ -270,18 +332,37 @@ function openLink(url) {
       
     </span>
   
+  <a href="https://kin-design.is-cool.dev/posts/code-photograher-article/">
   
   <img src="https://kin-design.is-cool.dev/img/covers/CodePhotographerCover.jpg"
     class="post-cover"
     alt="Code Like a Photographer"
-    title="Cover Image" />
+    title="Photo by me." />
+</a>
+  
+    <h5><i>Photo by me.</i></h5>
+  
 
 
   
+  <blockquote>
+    <div class="table-of-contents">
+      <h2>
+        Table of Contents
+      </h2>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-backstory"><strong>The Backstory</strong></a></li>
+    <li><a href="#limitations-as-a-driving-factor"><strong>Limitations as a driving factor</strong></a></li>
+    <li><a href="#change-of-focus"><strong>Change of focus</strong></a></li>
+  </ul>
+</nav>
+    </div>
+  </blockquote>
+  
 
   <div class="post-content"><div>
-        <p><em>Photo by me.</em></p>
-<p>I’m a sort of experienced programmer by now, with a couple years under my belt working on various projects, both professional and personal. Wouldn’t say I’m great, but I’ve been around the block.</p>
+        <p>I’m a sort of experienced programmer by now, with a couple years under my belt working on various projects, both professional and personal. Wouldn’t say I’m great, but I’ve been around the block.</p>
 <p>In my development journey I never really found the time or motivation to re-write <strong>a whole project</strong> from scratch, since I never really <strong>found a reason</strong>. It’s already done after all, I’ve built the thing, <strong>so logically I should know it by heart</strong>. Re-doing the whole process would just be a waste of time. <strong>Does sound legit, doesn’t it?</strong></p>
 <h2 id="the-backstory"><strong>The Backstory</strong><a href="#the-backstory" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>I made a game in <a href="https://pyga.me/docs/index.html">Pygame</a> couple of months ago, it’s a dungeon crawler card game called <a href="https://github.com/SasVel/Koz-Pygame">Koz</a>. It was a wild ride to implement an Entity Component System all from scratch, but overall it was worth it. I quite enjoyed what I’ve built and wanted to expand on it beyond my starting goal, but Pygame is just a library, not a game engine and a lot of the utilities of a modern game making utility are missing. Lackluster shader support, no UI utilities, etc.</p>
@@ -310,7 +391,7 @@ function openLink(url) {
 <p>So that is the gist of it! Solely focusing on building the foundations <strong>freed up mind real estate</strong> to improve the final product and to improve myself. Re-writing projects (<strong>within reason, I’m not advocating to redo your OS in Rust</strong>) is definitely a tool worth considering!</p>
 <p>The repository for <a href="https://github.com/SasVel/koz-godot">Godot Koz.</a></p>
 <blockquote>
-<div class="player">
+<div class="centered player">
   <button id="playButton" type="button" onclick="showContent(this)">
     Play Koz in the browser!
   </button>
@@ -359,6 +440,59 @@ function openLink(url) {
   
     
 <div class="pagination">
+  <div class="centered"><div class="share-buttons">
+  <a class="big-text">Share: </a>
+  
+  <a class="share-link share-copy"
+    onclick="copyLink('https:\/\/kin-design.is-cool.dev\/posts\/code-photograher-article\/')"
+    target="_blank"
+    rel="noopener"
+    aria-label="Share on Bluesky">
+    <i class="fa-solid fa-share-nodes"></i>
+  </a>
+  
+  <a class="share-link share-bluesky"
+    href="https://bsky.app/intent/compose?text=Code%20Like%20a%20Photographer The%20value%20of%20a%20re-write. Read More! %20https%3A%2F%2Fkin-design.is-cool.dev%2Fposts%2Fcode-photograher-article%2F"
+    target="_blank"
+    rel="noopener"
+    aria-label="Share on Bluesky">
+    <i class="fa-brands fa-bluesky fa-lg"></i>
+  </a>
+  
+  <a class="share-link share-x-twitter"
+    href="https://x.com/intent/tweet?text=Code%20Like%20a%20Photographer The%20value%20of%20a%20re-write. Read More! %20https%3A%2F%2Fkin-design.is-cool.dev%2Fposts%2Fcode-photograher-article%2F"
+    target="_blank"
+    rel="noopener"
+    aria-label="Share on X">
+    <i class="fa-brands fa-x-twitter fa-lg"></i>
+  </a>
+  
+  <a class="share-link share-mastodon"
+    href="#"
+    onclick="shareToMastodon('Code Like a Photographer', 'https:\/\/kin-design.is-cool.dev\/posts\/code-photograher-article\/'); return false;"
+    aria-label="Share on Mastodon">
+    <i class="fa-brands fa-mastodon fa-lg"></i>
+  </a>
+  <script>
+  function copyLink(url) {
+    console.log(url)
+    
+    navigator.clipboard.writeText(url);
+
+    
+    alert("Link copied: " + url);
+  }
+
+
+  function shareToMastodon(title, url) {
+    var instance = prompt("Enter your Mastodon server (e.g., mastodon.social):", "mastodon.social");
+    if (!instance) return false;
+    var shareUrl = "https://" + instance + "/share?text=" + encodeURIComponent(title + " " + url);
+    window.open(shareUrl, '_blank');
+  }
+  </script>
+</div>
+</div>
   <div class="pagination__title">
     <span class="pagination__title-h">Read other posts</span>
     <hr />
