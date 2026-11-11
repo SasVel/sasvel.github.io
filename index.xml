@@ -12,22 +12,22 @@
 			<copyright>Created by Sas</copyright>
 		
 		
-			<lastBuildDate>Fri, 30 Oct 2026 08:53:38 +0200</lastBuildDate>
+			<lastBuildDate>Wed, 11 Nov 2026 07:28:43 +0200</lastBuildDate>
 		
 			<atom:link href="https://kin-design.is-cool.dev/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Be the cartographer of your own path</title>
+				<link>https://kin-design.is-cool.dev/posts/cartographer-of-your-path-article/</link>
+				<pubDate>Wed, 11 Nov 2026 07:28:43 +0200</pubDate>
+				<guid>https://kin-design.is-cool.dev/posts/cartographer-of-your-path-article/</guid>
+				<description>&lt;p&gt;Every creative journey starts with excitement. An incredible rush to create this new amazing thing, materializing before your very eyes. Sadly this feeling often withers away with time, when the project is big. What do you do then? What to do when the spark fades away?&lt;/p&gt;&#xA;&lt;h2 id=&#34;expectations-vs-reality&#34;&gt;Expectations vs reality&lt;/h2&gt;&#xA;&lt;p&gt;Every skill requires constant effort for progress. Often that progress is not linear though. Some days you feel you make no progress whatsoever, others you are at 200% productivity and feel fantastic (often after an energy drink).&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>This is Koz!</title>
 				<link>https://kin-design.is-cool.dev/posts/koz-intro/</link>
 				<pubDate>Fri, 30 Oct 2026 08:53:38 +0200</pubDate>
 				<guid>https://kin-design.is-cool.dev/posts/koz-intro/</guid>
 				<description>&lt;h1 id=&#34;the-weird-yet-charming-idea&#34;&gt;The weird, yet charming idea.&lt;/h1&gt;&#xA;&lt;p&gt;Koz started as an ambitious university project for a pygame course.&#xA;It was my first experience building a game outside of an engine and it was a wild one.&#xA;I wanted to make something like a visual representation of what is going on in my head when playing Scoundrel and go off from there.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-scoundrel&#34;&gt;What is &lt;a href=&#34;http://www.stfj.net/art/2011/Scoundrel.pdf&#34;&gt;Scoundrel&lt;/a&gt;?&lt;/h2&gt;&#xA;&lt;p&gt;Scoundrel is a &lt;em&gt;single player roguelike card game&lt;/em&gt; by Zach Gage and Kurt Bieg.&#xA;You can have an awesome roguelike experience by yourself with a deck of cards and a counter.&#xA;&lt;img src=&#34;https://kin-design.is-cool.dev/img/koz/rs_scoundrel_cover.jpg&#34; alt=&#34;Ripple Shuffle &amp;amp; Roll’s cover for his tutorial on Scoundrel&#34;&gt;&#xA;&lt;em&gt;&lt;a href=&#34;https://youtu.be/7fP-QLtWQZs?si=6TzTVj6jkvMDWEln&#34;&gt;Ripple Shuffle &amp;amp; Roll&amp;rsquo;s tutorial&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Homepage</title>
-				<link>https://kin-design.is-cool.dev/homepage/</link>
-				<pubDate>Fri, 30 Oct 2026 08:51:43 +0200</pubDate>
-				<guid>https://kin-design.is-cool.dev/homepage/</guid>
-				<description>&lt;h3 id=&#34;this-is-a-homepage&#34;&gt;This is a homepage&lt;/h3&gt;</description>
 			</item>
 			<item>
 				<title>Your Great Work does not matter.</title>
@@ -52,10 +52,10 @@
 			</item>
 			<item>
 				<title>About</title>
-				<link>https://kin-design.is-cool.dev/about/about/</link>
+				<link>https://kin-design.is-cool.dev/about/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://kin-design.is-cool.dev/about/about/</guid>
-				<description>&lt;p&gt;The font used is the one true font - 0xProto&lt;/p&gt;</description>
+				<guid>https://kin-design.is-cool.dev/about/</guid>
+				<description>&lt;h3 id=&#34;credits&#34;&gt;Credits:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/0xType/0xProto&#34;&gt;0xProto&lt;/a&gt;, the best font ever created.&lt;/li&gt;&#xA;&lt;li&gt;An excessive use of &lt;a href=&#34;https://fontawesome.com/&#34;&gt;Font Awesome Icons&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo static site generator&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/panr/hugo-theme-terminal&#34;&gt;Terminal theme&lt;/a&gt; by Panr&lt;/li&gt;&#xA;&lt;li&gt;Some pictures from &lt;a href=&#34;https://pixabay.com/&#34;&gt;Pixabay&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
 			</item>
 	</channel>
 </rss>

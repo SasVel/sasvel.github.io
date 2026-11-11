@@ -33,13 +33,13 @@
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/pagination.min.6fa4b51cdad2f584e235fe1a8e3dbe1802d5caf4b0e8ae02c4d70e801a61615f.css">
 
   
-  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/post.min.4bb5b1f35c2157f88e08350f65fbf1144859890d955793b42a8b26e1039b15d0.css">
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/post.min.be088affa7317e7ddcd816367dd84fbb551aae5f2fccc08a843c891226584090.css">
 
   
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/share-buttons.min.67fbdf62f2bf26ff595bb2de74dea0e9fa479187033ab4d766c9f8e7c0d95d90.css">
 
   
-  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/shared.min.eb277cbe66ceb7ca6c9ae99d39ed1ea29fc0f3f3c1c5dd11e1134201e2e6e4a0.css">
+  <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/shared.min.bada88bbbc2ac6f8ec5e5a69d5eb9168c82757342d6f9f4a24a4c86525463931.css">
 
   
   <link rel="stylesheet" href="https://kin-design.is-cool.dev/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
@@ -268,7 +268,7 @@ function openLink(url) {
   <h1 class="post-title">
     <a href="https://kin-design.is-cool.dev/posts/koz-intro/">This is Koz!</a>
   </h1>
-  <div class="post-meta"><time class="post-date">30-10-2026</time><span class="post-reading-time">3 min read (524 words)</span><div class="share-buttons">
+  <div class="post-meta"><time class="post-date">30-10-2026</time><span class="post-reading-time">5 min read (887 words)</span><div class="share-buttons">
   <a class="big-text">Share: </a>
   
   <a class="share-link share-copy"
@@ -342,8 +342,8 @@ function openLink(url) {
   
 
 
+  <hr>
   
-  <blockquote>
     <div class="table-of-contents">
       <h2>
         Table of Contents
@@ -352,10 +352,12 @@ function openLink(url) {
   <ul>
     <li><a href="#what-is-scoundrel">What is Scoundrel?</a></li>
     <li><a href="#python-is-easyright">Python is easy&hellip;right?</a></li>
+    <li><a href="#koz-in-godot">Koz in Godot</a></li>
+    <li><a href="#the-future-of-the-project">The Future of the project</a></li>
   </ul>
 </nav>
     </div>
-  </blockquote>
+  <hr>
   
 
   <div class="post-content"><div>
@@ -372,6 +374,7 @@ You can have an awesome roguelike experience by yourself with a deck of cards an
 <p>It&rsquo;s inspired from other digital roguelike card games like Slay the Spire and Inscription. I wanted the artstyle to be symbolic of the feeling of randomness playing Scoundrel - bashed together with not much thought, but working so well nontheless.</p>
 <p><img src="/img/koz/koz_assets_physical.jpg" alt="Koz assets irl"></p>
 <p>I also had an urge to challenge myself to draw everything physically, since Scoundrel is very much a real life card game.</p>
+<p>I timed drawing every sprite, with small sprites having a 2 min limit and big ones 5 min. The backgrounds had no time limit, but I tried to fit in 2 hours. One shot, whatever happens happens. After drawing I cut out every sprite and photo scanned them with my phone and arranged/cleaned them up digitally. It was such a blast! I&rsquo;m not very good at drawing, so having no constraints and forcing myself to think on my feet made me jump out of that analysis paralysis I get with an empty sheet. No time to overthink.</p>
 <h2 id="python-is-easyright">Python is easy&hellip;right?<a href="#python-is-easyright" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>&hellip;yeah&hellip;</p>
 <p>I was so green back then, so full of wonder and delusion. Thinking it would be a fun little
@@ -381,18 +384,28 @@ But&hellip;how hard could it be to develop some systems I already know in python
 <p>I had to develop from scratch:</p>
 <ul>
 <li>UI management system with anchoring</li>
-<li>tweening</li>
-<li>observer pattern</li>
+<li>Dynamic data driven UI for the cards, effects and progress bars</li>
+<li>Tweening</li>
+<li>Observer pattern</li>
 <li>Entity Component System for the cards themselves</li>
-<li>Color palette controlled by a JSON.</li>
+<li>Color palette controlled by a JSON</li>
 </ul>
+<p><img src="/img/koz/koz_pygame_screen.png" alt="Koz Pygame screenshot"></p>
 <p>This was while battling the hidden pitfalls of python, such as a dependency hell that was only resolved by initialising every part of the game on startup.
 Ruining the whole point of having dependancies, all game objects reserve memory immediately after initialisation.
 But at least it worked, and that is a sacrifice I was willing to make. The game is small enough to not be a RAM hog, even with my shitty solution.</p>
-<p><em>Also finding PygameCE was a game changer, it has a ton of little improvements, as well as having slightly better documentation.</em></p>
+<p><img src="/img/koz/pygame_ce_tiny.jpg" alt="Pygame CE logo"> <em>Also finding <a href="https://pyga.me/docs/index.html">Pygame CE</a> was a game changer, it has a ton of little improvements, as well as having slightly better documentation.</em></p>
+<p>This is <a href="https://github.com/SasVel/Koz-Pygame.git">the original repo</a> for the project if you want to enjoy some <em>badly written code</em>.</p>
 <p>It was a fun project that made me a better developer, no doubt about that. The ECS system from scratch made me sweat. Coding without an engine felt like making a whole new world out of nothing, it was incredibly freeing, yet very scary. You can&rsquo;t really blame anybody or any feature, when all features are made by you. <strong>All decisions fall on your shoulders alone.</strong></p>
 <p>The game worked at the end and I was a happy bugger. But I was not yet satisfied, I didn&rsquo;t manage to make shaders work, good particle effects would also take forever. So I made my first game rewrite - from Pygame to Godot!</p>
-<p>This is <a href="https://github.com/SasVel/Koz-Pygame.git">the original repo</a> for the project if you want to enjoy some <em>badly written code</em>.</p>
+<h2 id="koz-in-godot">Koz in Godot<a href="#koz-in-godot" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>I&rsquo;ve been working on and off with the engine for years and have a solid grasp of it and I was sure the node based workflow would help with recreating the Entity Component System and that Godot already has nice shader support. So thus - my first re-write!</p>
+<p><img src="/img/koz/koz_godot_screen.png" alt="Koz Pygame screenshot"></p>
+<p>It was a good brain exercise to build the same game but with totally different tools. I already knew the games systems, how I want them to look, interact and work. That let me use the toolset in front of me a lot better and faster. The same game I have maticiliously built in Pygame was fully built for around a month.</p>
+<blockquote>
+<p><a href="/posts/the-value-of-rnd-article/">More for the re-write</a></p>
+</blockquote>
+<p>Godot made the process of making a web version of the game a breeze too! Having one source code with different exports is a game changer we don&rsquo;t appreciate enough.</p>
 <div class="centered player">
   <button id="playButton" type="button" onclick="showContent(this)">
     Play Koz in the browser!
@@ -435,6 +448,10 @@ But at least it worked, and that is a sacrifice I was willing to make. The game 
   }
 </script>
 
+<h2 id="the-future-of-the-project">The Future of the project<a href="#the-future-of-the-project" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>I&rsquo;m still working on the project on the side, with semi-regular updates, so stay tuned! I&rsquo;d like to integrate the idea of trump suits directly into the gameplay, by giving each Action and Tool card a playing card suits (Hearts, Diamonds, Clubs, Spades) and having bonuses towards the randomly selected trump suit each game.</p>
+<p>I&rsquo;d like to also fix all the bugs I can and make little expansions in time with cards, monsters and rooms with multiple choice answers, similar to Slay the Spire.</p>
+<p>Tell me what you think on the <a href="https://sasvel.itch.io/koz">page for the game</a>, as well as play and rate it!</p>
 
       </div></div>
 
@@ -500,6 +517,12 @@ But at least it worked, and that is a sacrifice I was willing to make. The game 
   </div>
   <div class="pagination__buttons">
     
+      <a href="https://kin-design.is-cool.dev/posts/cartographer-of-your-path-article/" class="button inline prev">
+        &lt; [<span class="button__text">Be the cartographer of your own path</span>]
+      </a>
+    
+    
+      ::
     
     
       <a href="https://kin-design.is-cool.dev/posts/your-great-work-article/" class="button inline next">
